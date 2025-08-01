@@ -8,7 +8,7 @@ public class Quser {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long Id;
-    private String Name;
+    private String name;
     private String Email;
     private String Password;
     private String Role;
@@ -22,11 +22,11 @@ public class Quser {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setName(String Name) {
+        Name = Name;
     }
 
     public String getEmail() {
@@ -57,7 +57,7 @@ public class Quser {
     public String toString() {
         return "Quser{" +
                 "Id=" + Id +
-                ", Name='" + Name + '\'' +
+                ", Name='" + name + '\'' +
                 ", Email='" + Email + '\'' +
                 ", Password='" + Password + '\'' +
                 ", Role='" + Role + '\'' +

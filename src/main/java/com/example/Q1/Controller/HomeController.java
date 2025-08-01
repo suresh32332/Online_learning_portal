@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 public class HomeController {
 
-    @GetMapping("home")
+    @GetMapping("/")
     public String getMethodName(HttpServletRequest request) {
         return "Home Controller page " + request.getSession().getId();
     }
